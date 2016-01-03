@@ -17,7 +17,7 @@ def hello():
         if "(RT)" in bustd.text:
             try:
                 times_of_buses.append( 
-                    re.search("[0-9][0-9] mins", bustd.text).group(0)
+                    re.search("[0-9]{1,2} mins", bustd.text).group(0)
                 )
             except AttributeError:
                 pass
