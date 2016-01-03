@@ -1,1 +1,1 @@
-web: gunicorn nextbus.webapp --log-file -
+web: gunicorn web:app --log-file -
