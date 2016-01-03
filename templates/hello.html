@@ -1,7 +1,14 @@
-<h1>Next buses from Wheeley Road to Town</h1>
+<html>
+<head>
+    <title>{{ times_of_buses[0] }}</title>
+    <meta http-equiv="refresh" content="30">
+</head>
+<body>
+    <h1>Next buses from Wheeley Road to Town</h1>
 
-<ul>
-{% for time in times_of_buses %}
-<li><h2>{{ time }}<h2></li>
-{% endfor %}
-</ul>
+    <ul>
+    {% for time in times_of_buses %}
+    <li><h2>{{ time }}<h2></li>
+    {% endfor %}
+    </ul>
+</body>

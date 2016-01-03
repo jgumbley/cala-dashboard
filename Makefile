@@ -40,7 +40,7 @@ wheel: venv default
 
 .PHONY: run
 run: venv
-	. $(in_venv); python $(py_pkg)/webapp.py
+	. $(in_venv); python web.py
 
 .PHONY: clean
 clean:
